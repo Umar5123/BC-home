@@ -559,7 +559,6 @@ select {
     transition: all .5s;
     overflow: hidden;
 }
-
 .color-do:hover .overlay {
     height: 50%;
 }
