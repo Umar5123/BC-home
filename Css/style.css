@@ -1,0 +1,1456 @@
+/************** Global **********/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+i {
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/**************End Global ***********/
+.form-select:focus {
+    box-shadow: none;
+}
+
+body {
+    line-height: 1;
+}
+
+.container-custom {
+    max-width: 1219px;
+    margin: 0 auto;
+}
+
+.colorado-row {
+    padding: 67px 0;
+    border-bottom: 1px solid #80808033;
+    margin-bottom: 80px;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.row {
+    margin-right: calc(-.0 * var(--bs-gutter-x));
+    margin-left: calc(-.0 * var(--bs-gutter-x));
+}
+
+
+/**************** Header *****************/
+@font-face {
+    font-family: DINPro-Bold;
+    src: url(../fonts/DINPro-Bold_13934.woff);
+}
+
+a.logo-image {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+header {
+    position: relative;
+    z-index: 2;
+}
+
+.header-top {
+    margin-left: auto;
+
+}
+
+.header-top ul {
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+    padding: 12px;
+}
+
+.header-top ul li a {
+    color: #86a4a2;
+    font-size: 14px;
+    font-family: DINPro-Bold;
+}
+
+.header-top ul i {
+    color: #e95628;
+    font-size: 20px;
+}
+
+nav {
+    position: relative;
+}
+
+nav::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background: #00000033;
+    position: absolute;
+    top: 0;
+}
+
+nav ul {
+    margin-right: 35px;
+}
+
+.navbar-expand-md .navbar-nav {
+    flex-direction: row;
+    gap: 55px;
+}
+
+@font-face {
+    font-family: DINPro-Medium;
+    src: url(../fonts/DINPro-Medium_13936.woff);
+}
+
+.navbar-nav a.nav-link {
+    color: #0e6b66;
+    font-size: 22px;
+    font-family: DINPro-Medium;
+    transition: all .3s;
+}
+
+.navbar-nav a:hover {
+    color: #e95628;
+}
+
+/**************** End Header ****************/
+.banner {
+    background: url(../images/mountain.png) no-repeat;
+    background-position: 100% 26%;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding-top: 126px;
+    padding-bottom: 80px;
+    cursor: pointer;
+}
+
+.slick-dots {
+    display: none;
+}
+
+.main-slider .slick-dots {
+    display: none;
+}
+
+.banner h1 {
+    text-align: center;
+    font-size: 89px;
+    color: #fff;
+    font-family: DINPro;
+    /* margin-bottom: 170px; */
+}
+
+@font-face {
+    font-family: DINPro;
+    src: url(../fonts/DINPro\ Black.otf);
+}
+
+.banner::after {
+    content: "";
+    display: block;
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+    width: 635px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    opacity: 0.8;
+    background: #16706C;
+    z-index: -1;
+}
+
+.banner::before {
+    content: "";
+    display: block;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background: #03332F;
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 50%;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+.banner span {
+    color: #5ec6c6;
+}
+
+.banner h2 {
+    color: #5ec6c6;
+    font-size: 41px;
+    text-align: end;
+    padding-right: 85px;
+    font-family: DINPro;
+}
+
+.banner p {
+    color: #6BE2E2;
+    font-size: 16px;
+    max-width: 315px;
+    font-family: DINPro-Medium;
+    text-align: center;
+    margin-left: auto;
+    display: block;
+    padding-right: 75px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+/* banner-explore */
+.container-explore {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.banner-explore {
+    background-color: #ffffffe8;
+    padding: 37px 75px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-explore h3 {
+    color: #3F3F3F;
+    font-size: 35px;
+    font-family: DINPro-Bold;
+
+}
+
+select.form-select.form-select-lg {
+    font-size: 16px;
+    color: #3F3F3F;
+    font-family: DINPro-Medium;
+    padding: 10px;
+}
+
+select {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.form-select-lg {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    /* font-size: 1.25rem; */
+    border-radius: 0;
+    width: 240px;
+    /* width: 100%; */
+}
+
+.select-box label {
+    color: #3F3F3F;
+    font-size: 16px;
+    font-family: DINPro-Medium;
+}
+
+.banner-explore a {
+    background: #e85628;
+    font-size: 20px;
+    font-family: DINPro-Bold;
+    padding: 12px 22px;
+    color: #fff;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+.banner-explore a:hover {
+    background: #aa3410;
+}
+
+/************** Bike Map **********/
+.bike-map {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+.bike-map .container-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bike-map .container-custom .card:nth-child(1) {
+    max-width: 310px;
+    width: 100%;
+    text-align: center;
+}
+
+.bike-map .container-custom .card:nth-child(2) {
+    max-width: 324px;
+    width: 100%;
+    text-align: center;
+}
+
+.bike-map .container-custom .card:nth-child(3) {
+    max-width: 324px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.bike-map .card:last-child {
+    position: relative;
+}
+
+.bike-map .card:last-child::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    border: 1px solid #c2c2c2;
+    opacity: 0.6;
+}
+
+.bike-map .card img {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    margin-inline: auto;
+}
+
+@font-face {
+    font-family: DIN-Pro;
+    src: url(../fonts/DIN\ Pro\ 400.otf);
+}
+
+.bike-map .card h2 {
+    font-family: DIN-Pro;
+    font-size: 30px;
+    color: #0e6b66;
+    margin-bottom: 25px;
+}
+
+.bike-map .card p {
+    font-family: DINPro-Medium;
+    font-size: 16px;
+    color: #3F3F3F;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.bike-map .card a {
+    color: #e85628;
+    font-size: 16px;
+    font-family: DINPro-Bold;
+}
+
+/* Slick Slider */
+.next-slick {
+    display: none;
+    visibility: hidden;
+}
+
+.prev-slick {
+    display: none;
+    visibility: hidden;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 50px;
+}
+
+.slick-dots button {
+    display: block;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: #bec1c1;
+    text-indent: -9999px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: rgb(6, 6, 6);
+}
+
+/*************** Large Card **************/
+
+.container-fluid {
+    padding-right: var(--bs-gutter-x, .0rem);
+    padding-left: var(--bs-gutter-x, .0rem);
+}
+
+.large-card .row h2 {
+    padding-top: 40%;
+    text-align: center;
+    color: #ffff;
+    font-size: 50px;
+    font-family: DINPro-Bold;
+    transition: all .10s ease;
+}
+
+.member {
+    background: url(../images/member.png) no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 712px;
+    object-fit: contain;
+    position: relative;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: #03332f9e;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.member:hover h2 {
+    padding-top: 30%;
+    color: #3F3F3F;
+    transition: all .5s ease;
+}
+
+.member:hover .overlay {
+    height: 50%;
+
+}
+
+.member:hover .overlay span {
+    opacity: 1;
+    display: block;
+}
+
+.overlay span {
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: DINPro-Bold;
+    text-align: center;
+    line-height: 1.8;
+    /* opacity: 0;
+    display: none; */
+    transition: all .7s;
+
+}
+
+.color-do:hover .overlay {
+    height: 50%;
+}
+
+/****************** Color Less **************/
+
+.color-less {
+    background: linear-gradient(rgba(192, 213, 85, 0.731), #c0d555af), url(../images/Layer\ 5.png) no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 712px;
+    object-fit: contain;
+    position: relative;
+    cursor: pointer;
+}
+
+.color-less:hover h2 {
+    padding-top: 30%;
+    color: #3F3F3F;
+    transition: all .5s ease;
+}
+
+.color-less .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: #20260075;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.color-less:hover .overlay {
+    height: 50%;
+}
+
+.color-less:hover .overlay span {
+    opacity: 1;
+    display: block;
+}
+
+/******************End Color Less **************/
+
+/****************** color-do **************/
+.color-do {
+    background: url(../images/color\ do.png) no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 712px;
+    object-fit: contain;
+    position: relative;
+    cursor: pointer;
+}
+
+.color-do h2 {
+    max-width: 373px;
+    margin: 0 auto;
+}
+
+.color-do:hover h2 {
+    padding-top: 20%;
+    color: #3F3F3F;
+    transition: all .5s ease;
+}
+
+.color-do .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: #7b2c259c;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.color-do:hover .overlay {
+    height: 50%;
+}
+
+.color-do:hover .overlay span {
+    opacity: 1;
+    display: block;
+}
+
+/****************** End color-do **************/
+
+/***************** color-lightblue *************/
+.color-lightblue {
+    background: url(../images/boke.png) no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 712px;
+    object-fit: contain;
+    position: relative;
+    cursor: pointer;
+}
+
+.color-lightblue:hover h2 {
+    padding-top: 30%;
+    color: #3F3F3F;
+    transition: all .5s ease;
+}
+
+.color-lightblue .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: #2d5c60c9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.color-lightblue:hover .overlay {
+    height: 50%;
+}
+
+.color-lightblue:hover .overlay span {
+    opacity: 1;
+    display: block;
+}
+
+/*****************End color-lightblue *************/
+
+/***************End Large Card **************/
+
+/************ Testimonial **********/
+.testimonial {
+    background-color: #C7D3D2;
+    padding-top: 95px;
+
+}
+
+.testimonial-container {
+    max-width: 1054px;
+    margin: 0 auto;
+}
+
+.testimonial-content {
+    margin: 0 auto;
+    display: block;
+    max-width: fit-content;
+    text-align: center;
+}
+
+.testimonial-content h2 {
+    color: #ffff;
+    font-size: 30px;
+    font-family: Pro-light;
+    margin-bottom: 50px;
+}
+
+@font-face {
+    font-family: Pro-Light;
+    src: url(../fonts/DIN\ Pro\ Light\ 300.otf);
+}
+
+.testimonial-container p {
+    color: #535858;
+    font-size: 59px;
+    font-family: Pro-Light;
+    margin-bottom: 30px;
+    width: 100%;
+    line-height: 1.2;
+}
+
+@font-face {
+    font-family: DINPro-Black;
+    src: url(../fonts/DINPro\ Black.otf);
+}
+
+.testimonial-content a,
+.testimonial-content span {
+    font-family: DINPro-Black;
+    font-size: 16px;
+}
+
+.testimonial-content a {
+    color: #535858;
+    position: relative;
+}
+
+.testimonial-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.testimonial-links a::before {
+    content: "";
+    display: block;
+    background: grey;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    right: -12px;
+}
+
+.testimonial-content span {
+    color: #e85628;
+}
+
+a.testiomial-btn {
+    background: #fff;
+    color: #7D8584;
+    padding: 13px 18px;
+    font-size: 20px;
+    font-family: DINPro-Bold;
+    border-radius: 3px;
+    transition: all .3s;
+    margin-bottom: 75px;
+}
+
+a.testiomial-btn:hover {
+    background: #7f7777;
+    color: #fff;
+}
+
+.testimonial-image {
+    max-width: 263px;
+    margin: 0 auto;
+}
+
+.testimonial-image img {
+    width: 100%;
+    height: 132px;
+    object-fit: contain;
+}
+
+/************End Testimonial **********/
+
+
+/************ Bicycle Colorado ***********/
+.bicycle-coloradao {
+    padding-bottom: 80px;
+}
+
+.colorado-row {
+    padding: 67px 0;
+    border-bottom: 1px solid #80808033;
+    margin-bottom: 80px;
+}
+
+.bicyle-icons {
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+
+
+}
+
+@font-face {
+    font-family: SourceSansPro-Semibold;
+    src: url(../fonts/SourceSansPro-Semibold.ttf);
+}
+
+.bicycle-coloradao h2 {
+    color: #84d0ce;
+    font-size: 25px;
+    font-family: SourceSansPro-Light;
+    font-family: DINPro-Medium;
+}
+
+
+.bicyle-icons i {
+    background-color: #84d0ce;
+    color: #fff;
+    font-size: 35px;
+    border-radius: 100px;
+    transition: all .3s ease;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bicyle-icons i:hover {
+    transform: translateY(10px);
+}
+
+/******************* Latest News *****************/
+
+.news-content-left {
+    max-width: 530px;
+}
+
+.latest-news {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+}
+
+.news-left-child {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+img.news-left-image {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.news-left-content h3 {
+    font-size: 20px;
+    color: #3f3f3f;
+    font-family: DINPro-Bold;
+    margin-bottom: 5px;
+}
+
+.news-left-content h4 {
+    font-size: 15px;
+    color: #e95628;
+    font-family: DINPro-Bold
+}
+
+a.latest-news-btn {
+    background-color: #E85628;
+    padding: 13px 25px;
+    color: #fff;
+    border-radius: 3px;
+    transition: all .3s;
+    border: 1px solid transparent;
+    font-family: DINPro-Medium;
+}
+
+a.latest-news-btn:hover {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+.left-news-text {
+    margin-bottom: 30px;
+}
+
+.left-news-text span {
+    display: block;
+    line-height: 1.8;
+    font-family: DINPro-Medium;
+    ;
+    color: #4b4b4b;
+}
+
+a.news-link {
+    color: #E85628;
+    /* display: inline-block; */
+}
+
+.comments-btn {
+    color: #E85628;
+    opacity: 0.8;
+}
+
+.group-image {
+    max-width: 295px;
+}
+
+.group-image img {
+    width: 100%;
+}
+
+/* Right */
+.news-content-right {
+    max-width: 530px;
+    position: relative;
+}
+
+.news-content-right::after {
+    content: "";
+    display: block;
+    background: grey;
+    width: 1px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    left: -20%;
+    opacity: 0.3;
+    right: 0;
+}
+
+.news-content-right h3 {
+    color: #84d0ce;
+    font-size: 25px;
+    font-family: DINPro-Medium;
+}
+
+.right-news-text h4 {
+    color: #E85628;
+    font-family: DINPro-Bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.right-news-text span {
+    color: #3f3f3f;
+    font-family: DINPro-Bold;
+}
+
+.right-news-text p {
+    line-height: 1.4;
+    font-family: DINPro-Medium;
+    color: #4b4b4b;
+    font-size: 17px;
+}
+
+.links-inline {
+    display: inline;
+    font-size: 15px;
+}
+
+.row>* {
+    padding-right: calc(var(--bs-gutter-x) * .0);
+    padding-left: calc(var(--bs-gutter-x) * .0);
+}
+
+/*******************End Latest News *****************/
+
+/************End Bicycle Colorado ***********/
+
+/* footer  */
+.footer-container {
+    max-width: 1005px;
+    margin: 0 auto;
+}
+
+footer {
+    background: #CBDC6C;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+footer ul li a {
+    font-family: DINPro-Bold;
+    color: #4b4b4b;
+    font-size: 16px;
+}
+
+footer .footer-image {
+    max-width: 150px;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+footer .footer-image img {
+    width: 100%;
+}
+
+footer span {
+    text-align: center;
+    display: block;
+    font-family: DINPro-Medium;
+    color: #4b4b4b;
+    font-size: 15px;
+    max-width: 855px;
+    margin: auto;
+}
+
+.footer-btn {
+    position: relative;
+    margin: 0 15px;
+}
+
+.footer-btn::before {
+    content: "";
+    display: block;
+    background: grey;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    right: -12px;
+
+}
+
+.footer-btn::after {
+    content: "";
+    display: block;
+    background: grey;
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: -6px;
+    top: 0;
+}
+
+/* Media Qurries */
+
+/*  */
+/* 1200px */
+@media screen and (max-width:1210px) {
+    .logo-image img {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+    }
+
+    .navbar-expand-md .navbar-nav {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .banner h1 {
+        text-align: center;
+        font-size: 70px;
+        color: #fff;
+        font-family: DINPro;
+
+    }
+
+    .bike-map .card:last-child::after {
+        left: -20px;
+    }
+
+    .news-content-right {
+        max-width: 480px;
+    }
+
+    .news-content-right::after {
+        content: "";
+        left: -10%;
+    }
+
+    .container-custom {
+        padding: 0 30px;
+    }
+}
+
+/* 992 */
+@media screen and (max-width:992px) {
+
+    /* Header */
+    .navbar-nav a.nav-link {
+        font-size: 16px;
+    }
+
+    nav ul {
+        margin-right: 0px;
+    }
+
+    /*End Header */
+    .banner h1 {
+        font-size: 45px;
+    }
+
+    .banner h2 {
+        font-size: 30px;
+    }
+
+    /* Bike Map */
+    .bike-map .container-custom {
+        gap: 10px;
+    }
+
+    .bike-map .card:last-child::after {
+        left: 0px;
+    }
+
+    .bike-map .container-custom .card:nth-child(1),
+    .bike-map .container-custom .card:nth-child(2),
+    .bike-map .container-custom .card:nth-child(3) {
+        max-width: 260px;
+    }
+
+    .bike-map .card h2 {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .bike-map .card p {
+        font-size: 14px;
+        margin-bottom: 12px;
+        line-height: 1.3;
+    }
+
+    .bike-map .card a {
+        font-size: 12px;
+    }
+
+    /* large card */
+    .large-card .row h2 {
+        font-size: 33px;
+    }
+
+    .member,
+    .color-less,
+    .color-do,
+    .color-lightblue {
+        width: 50%;
+        height: 500px;
+        object-fit: contain;
+    }
+
+    /* testimonial */
+    .testimonial-container p {
+        font-size: 40px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+
+    .testimonial-content h2 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-links {
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+
+    a.testiomial-btn {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    /*  */
+    .bicycle-coloradao h2 {
+        font-size: 22px;
+    }
+
+    .bicyle-icons {
+        gap: 20px;
+    }
+
+    .news-content-right {
+        max-width: 350px;
+    }
+
+    .news-content-left {
+        max-width: 357px;
+    }
+
+    .container-custom {
+        padding: 0 30px;
+    }
+}
+
+/* 767px */
+@media screen and (max-width:767px) {
+
+    /* Header */
+    .navbar-expand-md .navbar-nav {
+        flex-direction: column;
+        gap: 13px;
+        margin-top: 50px;
+        background: azure;
+    }
+
+    nav ul {
+        margin-right: 0px;
+    }
+
+    .navbar-toggler:focus {
+        text-decoration: none;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    i.fa-solid.fa-bars {
+        color: cornflowerblue;
+        font-size: 30px;
+    }
+
+    .navbar-nav a.nav-link {
+        font-size: 15px;
+    }
+
+    a.logo-image {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        object-fit: contain;
+        z-index: 1;
+    }
+
+    .logo-image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    ul.header-top-links {
+        display: none;
+    }
+
+    nav::before {
+        content: "";
+        display: none;
+    }
+
+    i.fa-solid.fa-bars {
+        color: cornflowerblue;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    /*End Header */
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner h2 {
+        font-size: 20px;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .banner p {
+        font-size: 13px;
+        max-width: 315px;
+        margin: 0 auto;
+        padding-right: 0px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    /* Bike Map */
+    .bike-map {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .bike-map .container-custom {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .bike-map .container-custom .card:nth-child(1),
+    .bike-map .container-custom .card:nth-child(2),
+    .bike-map .container-custom .card:nth-child(3) {
+        max-width: 260px;
+        width: 48%;
+    }
+
+    .bike-map .card:last-child::after {
+        content: "";
+        height: 0%;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        border: 1px solid #c2c2c2;
+        opacity: 0.6;
+        display: none;
+    }
+
+    /*  */
+    .testimonial-container p {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .testimonial-content h2 {
+        font-size: 25px;
+        margin-bottom: 9px;
+    }
+
+    .news-content-right::after {
+        content: "";
+        display: none;
+    }
+
+    /* 0 */
+    .news-content-right {
+        max-width: unset;
+        width: 48%;
+    }
+
+    .news-content-right h3 {
+        font-size: 18px;
+    }
+
+    .right-news-text h4 {
+        font-size: 15px;
+        margin-bottom: 0px;
+    }
+
+    .news-content-left {
+        max-width: unset;
+        width: 48%;
+    }
+
+    .right-news-text p {
+        line-height: 1.3;
+        font-size: 15px;
+    }
+
+    a.latest-news-btn {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .news-left-content h3 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .news-left-content h4 {
+        font-size: 12px;
+    }
+
+    .last-card-image .col-3 img {
+        width: 50%;
+    }
+
+    .last-card-image {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* 600px */
+@media screen and (max-width:600px) {
+
+    .member,
+    .color-less,
+    .color-do,
+    .color-lightblue {
+        width: 50%;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .large-card .row h2 {
+        padding-top: 26%;
+    }
+
+    .member:hover h2 {
+        padding-top: 19%;
+        color: #3F3F3F;
+        transition: all .5s ease;
+    }
+
+    .large-card .row h2 {
+        font-size: 26px;
+    }
+
+    .bicycle-coloradao h2 {
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .colorado-row {
+        padding: 30px 0;
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+
+    .bicyle-icons {
+        justify-content: center;
+    }
+
+    .bicyle-icons i {
+        font-size: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .latest-news {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 35px;
+    }
+
+    .news-content-left {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .news-content-right {
+        max-width: unset;
+        width: 100%;
+    }
+}
+
+/* 580px */
+@media screen and (max-width:550px) {
+    .banner h2 {
+        font-size: 20px;
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+    }
+
+    .banner p {
+        font-size: 13px;
+        padding-right: 0px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+    /* Bike Map */
+    .bike-map .container-custom {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .bike-map .container-custom .card:nth-child(1),
+    .bike-map .container-custom .card:nth-child(2),
+    .bike-map .container-custom .card:nth-child(3) {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .bike-map .card h2 {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+
+    .bike-map .card p {
+        font-size: 12px;
+        margin-bottom: 3px;
+        line-height: 1.2;
+    }
+
+    .bike-map .card a {
+        font-size: 10px;
+    }
+
+    .member,
+    .color-less,
+    .color-do,
+    .color-lightblue {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .large-card .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*  */
+    .testimonial-container p {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+
+    .testimonial-content a,
+    .testimonial-content span {
+        font-family: DINPro-Black;
+        font-size: 12px;
+    }
+}
